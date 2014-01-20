@@ -1,0 +1,44 @@
+body {
+    
+    font-size: 16pt;
+    color: #888;
+    margin: 0;
+    padding: 0;
+    background-color: #22282A;
+}
+
+.new-card{
+    margin: 2em 4em;
+    padding: .5em;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #ff6a00;
+    text-align: center;
+}
+
+.card-wrapper{
+    margin: auto; 
+    width: 90%;
+}
+
+.card-suite,
+.card-value{
+    display: inline-block;
+    margin: auto;
+    width: 45%;
+    font-size: 2em;
+    background-color: #f00;
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.card-suite,
+.card-value{
+    font-size: 4em;
+}
+
+.card-value {
+float: right;
+}
