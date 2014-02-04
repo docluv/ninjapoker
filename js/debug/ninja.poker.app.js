@@ -22,7 +22,19 @@
 
         cards: ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"],
 
-        suites: ["&spades;", "&hearts;", "&diams;", "&clubs;"],
+        suites: [{
+            suite: "&spades;",
+            action: "pushups"
+        },{
+            suite: "&hearts;",
+            action: "burpee"
+        },{
+            suite: "&diams;",
+            action: "situps"
+        },{
+            suite: "&clubs;",
+            action: "squats"
+        }],
 
         getSuite: function () {
             return Math.ceil((Math.random() * 4));

@@ -1,5 +1,4 @@
 body {
-    
     font-size: 16pt;
     color: #888;
     margin: 0;
@@ -7,38 +6,33 @@ body {
     background-color: #22282A;
 }
 
-.new-card{
+.new-card {
     margin: 2em 4em;
     padding: .5em;
     font-size: 1.5em;
     color: #fff;
-    background-color: #ff6a00;
+    background-color: #c30000;
     text-align: center;
 }
 
-.card-wrapper{
-    margin: auto; 
-    width: 90%;
+.card-wrapper {
+    margin: auto;
+    width: 50%;
+    background-color: #f00;
 }
 
-.card-suite,
-.card-value{
-    display: inline-block;
+.card-suite, .card-value, .exercise-value {
+    width: 90%;
     margin: auto;
-    width: 45%;
-    font-size: 2em;
-    background-color: #f00;
     color: #fff;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.card-suite,
-.card-value{
+    padding-top: .2em;
+    padding-bottom: .2em;
     font-size: 4em;
 }
 
+/*
 .card-value {
-float: right;
+    float: right;
 }
+*/

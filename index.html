@@ -11,12 +11,15 @@
         <div class="card-wrapper">
             <div class="card-suite"></div>
             <div class="card-value"></div>
+            <div class="exercise-value"></div>
         </div>
+
         <script src="js/debug/ninja.poker.app.js"></script>
         <script>
             var np = ninjaPoker(),
                 cs = document.querySelector(".card-suite"),
                 cv = document.querySelector(".card-value"),
+                ev = document.querySelector(".exercise-value"),
                 nc = document.querySelector(".new-card");
             
             nc.addEventListener("click", function () {
@@ -24,8 +27,9 @@
                 var card = np.getCard() - 1,
                     suite = np.getSuite() - 1;
             
-                cs.innerHTML = np.suites[suite];
+                cs.innerHTML = np.suites[suite].suite;
                 cv.innerHTML = np.cards[card];
+                ev.innerHTML = np.suites[suite].action;
             
             });
             
