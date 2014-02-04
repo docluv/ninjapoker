@@ -44,17 +44,11 @@
             return Math.ceil((Math.random() * 13));
         }
 
-        ////yes you can create chile objects
-        //settings: {
-        //    prop1: "Sample Module"
-        //}
-
     };
 
     ninjaPoker.fn.init.prototype = ninjaPoker.fn;
 
     return (window.ninjaPoker = ninjaPoker);
-
 
 })(window);
 
