@@ -1,0 +1,219 @@
+﻿{
+    "spaApp": {
+        "Name": "Ninja Poker",
+        "LongName": "Ninja Poker",
+        "lowerAppName": "ninjaPoker",
+        "Description": "Get in Shape Doing Martial Arts",
+        "ViewEngine": "simpleTemplate",
+        "ajax": "simple",
+        "CDN": "http://images.professionalaspnet.com/",
+        "compiler": "grunt",
+        "apiroot": "api/",
+        "apikey": "ninja-poker",
+        "author": "Chris Love",
+        "company": "Love2Dev",
+        "location": "USA",
+        "twitter": "@ChrisLove",
+        "site": "http://ninjapoker.net/",
+        "app-namespace": "ninjaPoker",
+        "colors": {
+            "primary-background": "#222"
+        }
+
+    },
+    "webroot": "",
+    "spaServices": {
+        "toobarJS": "0.0.1",
+        "l2Storagecache": "0.0.1"
+    },
+    "models": {
+        "workout": { },
+        "exercise": { },
+        "history": { }
+
+    },
+    "spaControllers": [
+        {
+            "name": "ninjaPokerController",
+            "parent": "spaController"
+        },
+        {
+            "name": "ninjaPokerAuthenticatedController",
+            "parent": "ninjaPokerController"
+        }
+    ],
+    "spaLayouts": [
+        {
+            "Name": "ninja-poker-layout",
+            "Id": "ninja-poker-layout"
+        }
+    ],
+    "spaViews": [
+        {
+            "Name": "bmr-calculator",
+            "spaViewId": "spa-view-bmr-calculator",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "BMR Calculator",
+            "spaRoute": "bmR/calculator",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        },
+        {
+            "Name": "bmi-calculator",
+            "spaViewId": "spa-view-bmi-calculator",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "BMI Calculator",
+            "spaRoute": "bmi/calculator",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        },
+        {
+            "Name": "home",
+            "spaViewId": "spa-view-home",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Ninja Poker",
+            "spaRoute": "",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "NotFound",
+            "spaViewId": "spa-view-404",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Ninja Poker Not Found",
+            "spaRoute": "404",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "exercises",
+            "spaViewId": "spa-view-exercises",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Exercises",
+            "spaRoute": "exercises",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        },
+        {
+            "Name": "exercise",
+            "spaViewId": "spa-view-exercise",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Exercise :name",
+            "spaRoute": "exercise/:name",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        },
+        {
+            "Name": "workout",
+            "spaViewId": "spa-view-workout",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Workout",
+            "spaRoute": "workout/:name",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        },
+        {
+            "Name": "workout-setup",
+            "spaViewId": "spa-view-workout-setup",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Workout Setup",
+            "spaRoute": "workout/setup",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        },
+        {
+            "Name": "history",
+            "spaViewId": "spa-view-workout",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Workout History",
+            "spaRoute": "workout/history",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "workout-list",
+            "spaViewId": "spa-view-workout-list",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Workout List",
+            "spaRoute": "workout/list",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "login",
+            "spaViewId": "spa-view-login",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "login",
+            "spaRoute": "login",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "forgotemail",
+            "spaViewId": "spa-view-forgot-email",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Forgot Email",
+            "spaRoute": "forgot/email",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "forgotpassword",
+            "spaViewId": "spa-view-forgot-password",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Forgot Password",
+            "spaRoute": "forgot/password",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "about",
+            "spaViewId": "spa-view-about",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "About Ninja Poker",
+            "spaRoute": "about",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "feedback",
+            "spaViewId": "spa-view-feedback",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "Feedback",
+            "spaRoute": "feedback",
+            "controller": "ninjaPokerController"
+        },
+        {
+            "Name": "social",
+            "spaViewId": "spa-view-social",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "social",
+            "spaRoute": "forgot/social",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        },
+        {
+            "Name": "account",
+            "spaViewId": "spa-view-account",
+            "spaTransition": "slide",
+            "spaLayout": "ninja-poker-layout",
+            "spaTitle": "account",
+            "spaRoute": "account",
+            "controller": "ninjaPokerController",
+            "deferred": true
+        }
+    ],
+    "templates": [
+        "foobar",
+        "test1"
+    ]
+
+}
