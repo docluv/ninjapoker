@@ -1,6 +1,6 @@
 ﻿;
 
-	Ninja-Poker.fn.account = ninjaPokerController.extend({
+NinjaPoker.fn.account = NinjaPoker.fn.ninjaPokerController.extend({
 
 		onload: function (response) {
 

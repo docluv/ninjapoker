@@ -1,6 +1,6 @@
 ﻿;
 
-	Ninja-Poker.fn.workout-setup = ninjaPokerController.extend({
+NinjaPoker.fn.workoutSetup = NinjaPoker.fn.ninjaPokerController.extend({
 
 		onload: function (response) {
 

@@ -23,34 +23,12 @@ module.exports = function (grunt) {
 				files: {
 					"public/css/site.min.css": ["public/css/site.css"],
 				}
+			},
+			criticalcss: {
+			    files: {
+			        "views/home/views/criticalcssmin.cshtml": ["css/critical.site.css"],
+			    }
 			}
-		},
-		less: {
-          development: {
-            options: {
-              paths: ["css"]
-            },
-            files: {
-              "*.css": "*.less"
-            }
-          },
-          production: {
-            options: {
-              paths: ["css"],
-              plugins: [
-                new require('less-plugin-autoprefix')({browsers: ["last 2 versions"]}),
-                new require('less-plugin-clean-css')(cleanCssOptions)
-              ],
-              modifyVars: {
-                imgPath: '"http://images.professionalaspnet.com/"',
-                bgColor: 'red'
-              }
-            },
-            files: {
-              "site.min.css": "*.less"
-            }
-          }
-
 		},
 		uglify: {
 			options: {
@@ -104,13 +82,21 @@ module.exports = function (grunt) {
                     'public/css/**/*',
                     'public/less/**/*',
 				],
-				tasks: ['less', 'cssmin'],
+				tasks: [/* 'less', */'cssmin'],
 			},
 		},
+		uncss: {
+		    dist: {
+		        files: {
+		            'css/critical.site.css': ['http://localhost:35058/NinjaPoker.htm']
+		        }
+		    }
+		}
+
 	});
 
 
 	// Default task.
-	grunt.registerTask('default', ['uglify', 'less', 'cssmin']);
+    grunt.registerTask('default', ['uglify', 'cssmin:sitecss', "uncss"]);
 
 };

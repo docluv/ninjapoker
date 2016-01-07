@@ -1,0 +1,168 @@
+.action-panel {
+	background: rgb(41, 56, 70); transition:width 1s ease-out; left: 0px; top: 70px; width: 0px; bottom: 0px; display: block; position: absolute; -moz-transition: width 1s ease-out; -o-transition: width 1s ease-out; -webkit-transition: width 1s ease-out;
+}
+.left-panel {
+	background: rgb(41, 56, 70); transition:width 1s ease-out; left: 0px; top: 70px; width: 0px; bottom: 0px; display: block; position: absolute; -moz-transition: width 1s ease-out; -o-transition: width 1s ease-out; -webkit-transition: width 1s ease-out;
+}
+.action-panel {
+	background: rgb(57, 81, 103); padding-top: 20px; display: none;
+}
+.expand-menu .left-panel {
+	width: 220px;
+}
+.nav-header {
+	padding: 33px 25px;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.nav-header .text-muted {
+	color: rgb(128, 149, 168);
+}
+.hamburger-nav {
+	margin: 10px 2em 10px 5px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 120px; height: 40px; line-height: 26pt; float: left; display: inline-block;
+}
+.hamburger-bar-wrapper {
+	width: 40px; height: 40px; padding-top: 8px; float: left; display: inline-block;
+}
+.hamburger-bar {
+	margin: 3px auto; border-radius: 4px; width: 30px; height: 4px; display: block; background-color: rgb(255, 255, 255);
+}
+.hamburger-bar-text {
+	margin: 0px 10px; width: 40px; height: 40px; line-height: 40px; float: left; display: inline-block;
+}
+.login-info {
+	height: 30px; line-height: 30px; margin-bottom: 0.5em;
+}
+.main-nav > a {
+	padding: 0px 0px 0px 12px; width: 220px; height: 40px; color: rgb(170, 170, 170); font-size: 1.25em; font-weight: 300; text-decoration: none; border-bottom-color: rgb(119, 119, 119); border-bottom-width: 1px; border-bottom-style: solid; display: block; background-color: transparent;
+}
+.main-nav > a:visited {
+	padding: 0px 0px 0px 12px; width: 220px; height: 40px; color: rgb(170, 170, 170); font-size: 1.25em; font-weight: 300; text-decoration: none; border-bottom-color: rgb(119, 119, 119); border-bottom-width: 1px; border-bottom-style: solid; display: block; background-color: transparent;
+}
+.main-nav > a:active {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 2px; border-bottom-style: solid; background-color: rgb(41, 56, 70) !important;
+}
+.main-nav .fa {
+	width: 1.75em; text-align: center; font-size: 1.5em;
+}
+.nav-text {
+	height: 40px; line-height: 40px; vertical-align: middle;
+}
+.nav-icon {
+	width: 32px; height: 32px; display: none; background-repeat: no-repeat;
+}
+.seleted-nav {
+	background-color: rgb(41, 56, 70) !important;
+}
+.main-nav > a.sub-nav {
+	width: 99%; padding-left: 1em; font-size: 1em; display: none;
+}
+.main-nav > a.sub-nav:visited {
+	width: 99%; padding-left: 1em; font-size: 1em; display: none;
+}
+a.sub-nav {
+	color: rgb(255, 255, 255);
+}
+.left-panel .y-scroller-wrapper {
+	height: calc(100% - 75px);
+}
+.main-nav > a.sub-nav.active {
+	display: block;
+}
+.main-nav > a.sub-nav.active:visited {
+	display: block;
+}
+.main-nav > a.selected.sub-nav.active {
+	border: currentColor; border-image: none; color: rgb(170, 170, 170); box-shadow: inset -2px -2px 2px 0px rgba(198,198,198,0.75);
+}
+.main-nav > a.selected.sub-nav.active:visited {
+	border: currentColor; border-image: none; color: rgb(170, 170, 170); box-shadow: inset -2px -2px 2px 0px rgba(198,198,198,0.75);
+}
+.expand-menu .main-content {
+	left: 220px;
+}
+.expanded-action-panel .main-content {
+	left: 220px;
+}
+.expanded-action-panel.expanded-menu .main-content {
+	left: 220px;
+}
+@media all and (min-width:600px)
+{
+.hamburger-nav {
+	margin-left: 2em;
+}
+.main-nav {
+	width: 220px; height: auto; padding-bottom: 2%; background-color: transparent;
+}
+.login-info > a {
+	width: 220px; height: 40px; text-align: center; color: rgb(201, 201, 201); padding-left: 10px; font-size: 1.25em; font-weight: bold; text-decoration: none; display: block;
+}
+.login-info > a:visited .main-nav > a {
+	width: 220px; height: 40px; text-align: center; color: rgb(201, 201, 201); padding-left: 10px; font-size: 1.25em; font-weight: bold; text-decoration: none; display: block;
+}
+.main-nav > a:visited {
+	width: 220px; height: 40px; text-align: center; color: rgb(201, 201, 201); padding-left: 10px; font-size: 1.25em; font-weight: bold; text-decoration: none; display: block;
+}
+.login-info > a {
+	height: 25px; text-align: left; line-height: 25px;
+}
+.login-info > a:visited {
+	height: 25px; text-align: left; line-height: 25px;
+}
+.login-info .fa {
+	height: 25px; line-height: 25px;
+}
+.login-info .nav-icon {
+	margin: 0px 2px;
+}
+.main-nav .fa {
+	margin: 12px 0px 0px; width: 20px; height: 20px; line-height: 20px; float: left;
+}
+.main-nav .nav-icon {
+	margin: 0px 2em; width: 30px; height: 30px; text-align: center;
+}
+.nav-text {
+	text-align: left; display: inline-block;
+}
+.nav-icon {
+	text-align: left; display: inline-block;
+}
+.nav-text {
+	width: calc(100% - 40px); overflow: hidden; padding-left: 10px;
+}
+.view-title {
+	width: calc(100% - 220px);
+}
+}
+@media all and (min-width:960px)
+{
+.expand-menu .left-panel {
+	width: 220px;
+}
+.expand-menu .main-content {
+	left: 220px;
+}
+.main-content {
+	left: 0px;
+}
+.expanded-action-panel .main-content {
+	left: 220px;
+}
+.expanded-action-panel.expanded-menu .main-content {
+	left: 220px;
+}
+.site-header .icon-profile_alt {
+	line-height: 70px; display: inline-block;
+}
+.site-header .user-name {
+	line-height: 70px; display: inline-block;
+}
+}
+@media all and (min-width:1180px)
+{
+.nav-icon {
+	display: inline-block;
+}
+}

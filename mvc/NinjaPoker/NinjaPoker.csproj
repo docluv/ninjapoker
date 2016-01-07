@@ -214,6 +214,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\APIController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -226,15 +227,37 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\dev\app.css" />
+    <Content Include="css\dev\ui\action-menu.css" />
+    <Content Include="css\dev\ui\action.panel.css" />
     <Content Include="css\dev\ui\animations.css" />
+    <Content Include="css\dev\ui\forms.css" />
+    <Content Include="css\dev\ui\navigation.css" />
+    <Content Include="css\dev\ui\typography.css" />
+    <Content Include="css\dev\views\about.css" />
+    <Content Include="css\dev\views\deferred\account.css" />
+    <Content Include="css\dev\views\deferred\bmi-calculator.css" />
+    <Content Include="css\dev\views\deferred\bmr-calculator.css" />
+    <Content Include="css\dev\views\deferred\exercise.css" />
+    <Content Include="css\dev\views\deferred\exercises.css" />
+    <Content Include="css\dev\views\deferred\social.css" />
+    <Content Include="css\dev\views\deferred\workout-setup.css" />
+    <Content Include="css\dev\views\deferred\workout.css" />
+    <Content Include="css\dev\views\feedback.css" />
+    <Content Include="css\dev\views\forgotemail.css" />
+    <Content Include="css\dev\views\forgotpassword.css" />
+    <Content Include="css\dev\views\history.css" />
+    <Content Include="css\dev\views\home.css" />
+    <Content Include="css\dev\views\login.css" />
+    <Content Include="css\dev\views\NotFound.css" />
+    <Content Include="css\dev\views\workout-list.css" />
     <Content Include="css\libs\addtohomescreen.min.css" />
     <Content Include="css\libs\normalize.css" />
+    <Content Include="css\libs\spa.css" />
+    <Content Include="css\libs\touch.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="gruntfile.js" />
     <Content Include="js\dev\controllers\about.js" />
     <Content Include="js\dev\controllers\deferred\account.js" />
@@ -258,9 +281,13 @@
     <Content Include="js\dev\Ninja-Poker.app.js" />
     <Content Include="js\dev\Ninja-Poker.bootstrap.js" />
     <Content Include="js\dev\services\Ninja-Poker.data.js" />
+    <Content Include="js\dev\ui\action.panel.js" />
     <Content Include="js\libs\addtohomescreen.min.js" />
     <Content Include="js\libs\class.js" />
     <Content Include="js\libs\controller.js" />
+    <Content Include="js\libs\deeptissue.js" />
+    <Content Include="js\libs\dollarbill.min.js" />
+    <Content Include="js\libs\l2Storagecache.js" />
     <Content Include="js\libs\simpleViewEngine.js" />
     <Content Include="js\libs\spa.js" />
     <Content Include="js\libs\spapm.js" />
@@ -358,8 +385,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="app.cache" />
+    <Content Include="css\ninjapoker.less" />
+    <Content Include="data\workout.json" />
+    <Content Include="data\exercises.json" />
+    <Content Include="data\history.json" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Home\layouts\ninjapokerlayout.cshtml" />
+    <Content Include="Views\Home\views\criticalcss.cshtml" />
+    <Content Include="Views\Home\views\criticalcssmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\git\SPAHelper\SPAHelper\SPAHelper.4.0.csproj">

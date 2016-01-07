@@ -1,0 +1,51 @@
+.x-scroller-wrapper {
+	width: 100%; height: 100%; overflow: hidden; padding-right: 0px; -ms-overflow-x: hidden; -ms-overflow-y: scroll; -ms-scroll-chaining: none; -ms-overflow-style: -ms-autohiding-scrollbar; -ms-scroll-translation: vertical-to-horizontal; -webkit-overflow-style: none; overflow-style: none; -moz-overflow-scrolling: touch; -webkit-overflow-scrolling: touch; overflow-scrolling: touch;
+}
+.xy-scroller-wrapper {
+	width: 100%; height: 100%; overflow: hidden; padding-right: 0px; -ms-overflow-x: hidden; -ms-overflow-y: scroll; -ms-scroll-chaining: none; -ms-overflow-style: -ms-autohiding-scrollbar; -ms-scroll-translation: vertical-to-horizontal; -webkit-overflow-style: none; overflow-style: none; -moz-overflow-scrolling: touch; -webkit-overflow-scrolling: touch; overflow-scrolling: touch;
+}
+.y-scroller-wrapper {
+	width: 100%; height: 100%; overflow: hidden; padding-right: 0px; -ms-overflow-x: hidden; -ms-overflow-y: scroll; -ms-scroll-chaining: none; -ms-overflow-style: -ms-autohiding-scrollbar; -ms-scroll-translation: vertical-to-horizontal; -webkit-overflow-style: none; overflow-style: none; -moz-overflow-scrolling: touch; -webkit-overflow-scrolling: touch; overflow-scrolling: touch;
+}
+.x-scroller-wrapper {
+	overflow: hidden; -ms-overflow-x: scroll; -ms-overflow-y: hidden; -ms-touch-action: pan-x; touch-action: pan-x;
+}
+.y-scroller-wrapper {
+	height: 100%; overflow: hidden; padding-right: 15px; -ms-overflow-x: hidden; -ms-overflow-y: scroll; -ms-touch-action: pan-y; touch-action: pan-y;
+}
+.text-scroll {
+	width: calc(100% - 20px); padding-right: 15px;
+}
+.panorama-panels {
+	-ms-touch-action: pan-y; touch-action: pan-y;
+}
+.panel-v-scroll {
+	overflow: hidden; -ms-overflow-x: hidden; -ms-overflow-y: scroll; -ms-scroll-chaining: none; -ms-scroll-snap-type: proximity; -ms-overflow-style: -ms-autohiding-scrollbar; -ms-touch-action: pan-y; -ms-scroll-translation: vertical-to-horizontal; touch-action: pan-y; overflow-style: none; -moz-overflow-scrolling: touch; -webkit-overflow-scrolling: touch; overflow-scrolling: touch;
+}
+.full-text {
+	margin: auto; width: calc(100% - 20px);
+}
+.large-text {
+	font-size: 1.1em;
+}
+@media all and (min-width:600px)
+{
+.xy-scroller-wrapper {
+	width: auto; height: 100%; overflow: hidden; padding-right: 0px; -ms-overflow-x: scroll; -ms-overflow-y: hidden;
+}
+.full-text {
+	margin: auto; width: calc(100% - 60px);
+}
+.view-list {
+	margin: auto; height: calc(100% - 60px);
+}
+.large-text {
+	font-size: 1.6em;
+}
+}
+@media all and (min-width:1024px)
+{
+.panel-v-scroll {
+	overflow: hidden; -ms-overflow-x: hidden; -ms-overflow-y: hidden; -ms-overflow-style: none; -ms-touch-action: none; touch-action: none; overflow-style: none;
+}
+}

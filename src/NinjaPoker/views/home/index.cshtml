@@ -1,0 +1,184 @@
+﻿@using SPAHelper
+
+
+<!DOCTYPE html>
+@{if (HttpContext.Current.IsDebuggingEnabled)
+{
+    @:<html lang="en">
+}else{
+    @:<html lang="en" manifest="app.cache">
+}
+<head>
+
+    <script>
+
+		var ef = "?_escaped_fragment_=";
+
+		if (!('querySelector' in document)
+			 || !('localStorage' in window)
+			 || !('addEventListener' in window)
+			|| !('matchMedia' in window)) {
+
+			if (window.location.href.indexOf("#!") > 0) {
+				window.location.href = window.location.href.replace("#!", ef);
+			} else {
+				if (window.location.href.indexOf(ef) < 0) {
+					window.location.href = window.location.href + ef;
+				}
+			}
+
+		} else {
+
+			if (window.location.href.indexOf(ef) >= 0) {
+				window.location.href = window.location.href.replace(ef, "#!");
+			}
+		}
+
+    </script>
+
+    <meta content="on" http-equiv="cleartype">
+    <meta http-equiv="content-language" content="us-en">
+
+    <title>Ninja Poker</title>
+
+    @if (!Html.HasEscapeFragment())
+    {
+    if (HttpContext.Current.IsDebuggingEnabled)
+    {
+
+    <link href="~/css/libs/normalize.css" rel="stylesheet" />
+    <link href="~/css/libs/spa.css" rel="stylesheet" />
+    <link href="~/css/dev/ui/animations.css" rel="stylesheet" />
+    <link href="~/css/dev/app.css" rel="stylesheet" />
+
+    <!-- Add library specific CSS references here -->
+    <link href="css/dev/views/home.css" rel="stylesheet" />
+<link href="css/dev/views/NotFound.css" rel="stylesheet" />
+<link href="css/dev/views/history.css" rel="stylesheet" />
+<link href="css/dev/views/workout-list.css" rel="stylesheet" />
+<link href="css/dev/views/login.css" rel="stylesheet" />
+<link href="css/dev/views/forgotemail.css" rel="stylesheet" />
+<link href="css/dev/views/forgotpassword.css" rel="stylesheet" />
+<link href="css/dev/views/about.css" rel="stylesheet" />
+<link href="css/dev/views/feedback.css" rel="stylesheet" />
+
+
+    }else{
+    <link href="http://images.professionalaspnet.com//css/site.min.css" rel="stylesheet">
+    }
+
+    }else{
+
+    <link href="http://images.professionalaspnet.com//css/core/Ninja-Poker.app.core.css" rel="stylesheet">
+
+    }
+
+    @if (Request.UserAgent.ToLower().Contains("ipad") || Request.UserAgent.ToLower().Contains("iphone"))
+    {
+    <link href="http://images.professionalaspnet.com//addtohomescreen.css" rel="stylesheet">
+    }
+
+    <meta content="Get in Shape Doing Martial Arts" name="description">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="favicon.ico" rel="shortcut icon">
+
+    <link rel="icon" sizes="192x192" href="http://images.professionalaspnet.com//touch-icon-android.png">
+    <link rel="apple-touch-icon" href="http://images.professionalaspnet.com//touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://images.professionalaspnet.com/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://images.professionalaspnet.com//touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://images.professionalaspnet.com//touch-icon-ipad-retina.png">
+
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+    <link rel="apple-touch-startup-image" href="http://images.professionalaspnet.com/startup.png">
+
+    <meta name="application-name" content="" />
+    <meta name="msapplication-config" content="IEconfig.xml" />
+
+    <meta name="msapplication-allowDomainMetaTags" content="true">
+    <meta name="msapplication-navbutton-color" content="">
+    <meta name="msapplication-badge" content="frequency=1440; polling-uri=">
+    <meta name="msapplication-notification" content="frequency=1440;polling-uri=; cycle=1" />
+    <meta name="msapplication-starturl" content="#!">
+    <meta name="msapplication-tooltip" content="">
+
+    <link type="text/plain" rel="author" href="http://ninjapoker.net/humans.txt" />
+
+</head>
+
+      <body spa-app="">
+
+          <main class="main-content" role="main"></main>
+
+          <footer class="footer"></footer>
+
+          @if (!Html.HasEscapeFragment())
+          {
+
+            @SPARenderPage("layouts/ninja-poker-layout.cshtml")
+
+          @SPARenderPage("views/home.cshtml")
+@SPARenderPage("views/NotFound.cshtml")
+@SPARenderPage("views/history.cshtml")
+@SPARenderPage("views/workout-list.cshtml")
+@SPARenderPage("views/login.cshtml")
+@SPARenderPage("views/forgotemail.cshtml")
+@SPARenderPage("views/forgotpassword.cshtml")
+@SPARenderPage("views/about.cshtml")
+@SPARenderPage("views/feedback.cshtml")
+
+
+              @SPARenderPage("templates/foobar.cshtml")    
+              @SPARenderPage("templates/test1.cshtml")    
+
+          }
+
+          @if (!Html.HasEscapeFragment())
+          {
+
+          if (HttpContext.Current.IsDebuggingEnabled)
+          {
+
+          <script src="~/js/libs/spa.js"></script>
+          <script src="~/js/libs/class.js"></script>
+          <script src="~/js/libs/controller.js"></script>
+          <script src="~/js/libs/dollarbill.min.js"></script>
+          <script src="~/js/libs/spapm.js"></script>
+          <script src="~/js/libs/simpleViewEngine.js"></script>
+          <script src="~/js/libs/l2Storagecache.js"></script>
+
+          <script src="~/js/dev/services/Ninja-Poker.data.js"></script>
+
+          <script src="~/js/dev/controllers/Ninja-Poker.js"></script>
+
+          <script src="js/dev/contollers/home.js"></script>
+<script src="js/dev/contollers/NotFound.js"></script>
+<script src="js/dev/contollers/history.js"></script>
+<script src="js/dev/contollers/workout-list.js"></script>
+<script src="js/dev/contollers/login.js"></script>
+<script src="js/dev/contollers/forgotemail.js"></script>
+<script src="js/dev/contollers/forgotpassword.js"></script>
+<script src="js/dev/contollers/about.js"></script>
+<script src="js/dev/contollers/feedback.js"></script>
+
+
+          <script src="~/js/dev/Ninja-Poker.app.js"></script>
+
+          <script src="~/js/dev/Ninja-Poker.bootstrap.js"></script>
+
+
+          }
+          else
+          {
+          <script src="js/Ninja-Poker.app.min.js"></script>
+
+          if (Request.UserAgent.ToLower().Contains("ipad") || Request.UserAgent.ToLower().Contains("iphone"))
+          {
+          <script src="http://images.professionalaspnet.com/addtohomescreen.min.js" async="async"></script>
+          }
+          }
+      </body>
+</html>

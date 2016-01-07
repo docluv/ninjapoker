@@ -1,6 +1,6 @@
 ﻿;
 
-	Ninja-Poker.fn.exercises = ninjaPokerController.extend({
+NinjaPoker.fn.exercises = NinjaPoker.fn.ninjaPokerController.extend({
 
 		onload: function (response) {
 

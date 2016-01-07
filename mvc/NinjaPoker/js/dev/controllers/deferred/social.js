@@ -1,6 +1,6 @@
 ﻿;
 
-	Ninja-Poker.fn.social = ninjaPokerController.extend({
+NinjaPoker.fn.social = NinjaPoker.fn.ninjaPokerController.extend({
 
 		onload: function (response) {
 

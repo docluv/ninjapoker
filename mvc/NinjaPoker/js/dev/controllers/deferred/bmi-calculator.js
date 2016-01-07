@@ -1,6 +1,6 @@
 ﻿;
 
-	Ninja-Poker.fn.bmi-calculator = ninjaPokerController.extend({
+NinjaPoker.fn.bmiCalculator = NinjaPoker.fn.ninjaPokerController.extend({
 
 		onload: function (response) {
 

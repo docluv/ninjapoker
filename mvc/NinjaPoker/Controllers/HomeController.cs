@@ -6,6 +6,7 @@ namespace ninjaPoker.Controllers
 {
     public class HomeController : Controller
     {
+        [OutputCache(Duration = 60, VaryByParam = "None")]
         public ActionResult Index()
         {
 
@@ -15,6 +16,7 @@ namespace ninjaPoker.Controllers
             return View();
         }
 
+        [OutputCache(Duration = 60, VaryByParam = "None")]
         public ActionResult Deferred()
         {
 

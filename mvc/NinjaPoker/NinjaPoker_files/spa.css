@@ -1,0 +1,27 @@
+.main-content {
+	border-radius: 5px 5px 0px 0px; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; position: absolute;
+}
+.spa-layout {
+	border-radius: 5px; left: 0px; top: 0px; right: 0px; bottom: 10px; overflow: hidden; display: none; position: relative;
+}
+.spa-view {
+	left: 0px; top: 0px; display: none; position: relative;
+}
+.spa-current-view {
+	width: 100%; height: 100%; overflow: hidden; display: block;
+}
+.show {
+	display: block !important;
+}
+.hide {
+	display: none !important;
+}
+@media all and (min-width:975px)
+{
+.main-content {
+	position: relative;
+}
+.spa-current-view {
+	min-height: 300px;
+}
+}
