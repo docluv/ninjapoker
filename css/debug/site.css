@@ -1,0 +1,38 @@
+body {
+    font-size: 16pt;
+    color: #888;
+    margin: 0;
+    padding: 0;
+    background-color: #22282A;
+}
+
+.new-card {
+    margin: 2em 4em;
+    padding: .5em;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #c30000;
+    text-align: center;
+}
+
+.card-wrapper {
+    margin: auto;
+    width: 50%;
+    background-color: #f00;
+}
+
+.card-suite, .card-value, .exercise-value {
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    font-size: 4em;
+}
+
+/*
+.card-value {
+    float: right;
+}
+*/
